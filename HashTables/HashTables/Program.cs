@@ -34,5 +34,11 @@ class Program
         int j = Convert.ToInt32(Console.ReadLine());
         string n = p.hash.Get($"{j}");
         Console.WriteLine($"\nIndex {j}'s value: {n}");
+        Console.WriteLine("Enter any index from 0 to 18 which you would like to remove");
+        int i = Convert.ToInt32(Console.ReadLine());
+        string m = p.hash.Get($"{i}");
+        Console.WriteLine($"\nIndex {i} with value {m} has been removed");
+        p.hash.Remove($"{j}");
+
     }
 }
