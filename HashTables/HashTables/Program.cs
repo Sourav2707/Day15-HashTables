@@ -20,7 +20,9 @@ class Program
             }
             Console.WriteLine($"The frequency of {a[j]} is {count}");
             hash.Add($"{j}", word);
+            Console.WriteLine($"Key - {j} Value - {hash.Get($"{j}")}");
         }
+        
     }
     public static void Main(string[] args)
     {
@@ -28,8 +30,9 @@ class Program
         string str = "To be or not to be";
         Program p = new Program(); 
         p.Frequency(str);
+        Console.WriteLine("Enter any index from 0 to 5 to find the value");
         int j = Convert.ToInt32(Console.ReadLine());
         string n = p.hash.Get($"{j}");
-        Console.WriteLine($"{j} index value is {n}");
+        Console.WriteLine($"\nIndex {j}'s value: {n}");
     }
 }
