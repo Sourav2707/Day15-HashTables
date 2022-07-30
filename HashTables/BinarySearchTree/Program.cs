@@ -15,4 +15,6 @@ binary.Add(63);
 binary.Add(67);
 binary.Display();
 binary.GetSize();
+bool result = binary.IfExists(63, binary);
+Console.WriteLine(result);
 Console.ReadKey();
